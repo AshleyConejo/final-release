@@ -1,0 +1,504 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Bebas Neue',  sans-serif;
+  text-transform: uppercase;
+  background-color: #000000;
+  
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Styles for the container class, adding left padding */
+.container {
+  padding-left: 10px;
+}
+
+/* Styles for the navigation bar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+/* Styles for the logo image */
+.logo {
+  width: 120px;
+  text-align: left;
+  margin-right: 10px; /* Add margin for separation */
+}
+
+/* Styles for the logo container */
+.logo-container {
+  margin-right: 0px;
+}
+
+/* Styles for the navigation links */
+#header nav ul {
+  list-style: none;
+  margin-left: auto;
+  padding: 0;
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255); /* Set text color to black */
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+  position: relative;
+}
+
+/* Styles for the underline effect on navigation links */
+nav ul li a::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: #151514;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+body {
+  color: #fff;
+}
+
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .custom-table-row {
+    display: table-row;
+    background-color: rgb(0, 0, 0); /* Light background color */
+    border-bottom: 1px solid #000000;
+  }
+  
+  .custom-table-header,
+  .custom-table-data {
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+  }
+  
+  .custom-table-header {
+    font-weight: bold;
+    background-color: #000000; /* Dark background color */
+    color: #fff;
+  }
+  
+  .custom-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: rgb(0, 0, 0); /* Primary button color */
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-button{
+    background-color: #560000; 
+  }
+  
+  .edit-button {
+    background-color: #560000; /* Success button color for Edit button */
+  }
+  
+  .delete-button {
+    background-color: #560000; /* Danger button color for Delete button */
+  }
+  
+  /* Additional styling for the title and add workout button */
+  .title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust the spacing between title and button */
+  }
+  
+  .title {
+    font-size: 24px;
+    color: #ffffff;
+  }
+  
+
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+  
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .custom-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #560000;
+    color: rgb(255, 255, 255)e0e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  button:hover {
+    background-color: #5600007a;
+  }
+  
+  
+  .custom-btn-warning {
+    background-color: #560000;
+    color: #ffffff;
+  }
+
+  
+
+
+/* nav.css */
+
+nav {
+  background-color: #000; /* 
+  color: #fff; /* Set text color to white */
+  padding: 5px; /* Add padding for better visibility */
+}
+
+.logo {
+  width: 200px;
+  text-align: left;
+  margin-right: 10px;
+}
+
+#sidemenu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff; /* Set text color to white */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #b4b4b4; /* Set text color to a lighter shade on hover */
+}
+
+.active {
+  color: #b4b4b4; /* Set text color to a lighter shade for the active link */
+}
+
+/* Additional styling for user-related items */
+nav li {
+  display: inline-block;
+  margin-left: 15px;
+  color: #fff; /* Set text color to white */
+}
+
+nav i {
+  margin-right: 5px;
+}
+
+/* Style for logout and login links */
+.nav-link.logout:hover,
+.nav-link.login:hover {
+  color: #b4b4b4;
+}
+
+:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.home .container{
+  -webkit-display: flex;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-top: 200px;
+}
+
+.home h1{
+	color:#ffffff;
+	font-size: 60px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin:0px;
+    margin-top: 50px;
+}
+
+.home h1 span{
+	color:#560000;;
+}
+
+.cta-buttons-container {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.cta-button {
+    display: inline-block;
+    margin: 50px; /* Adjust the margin as needed */
+    padding: 10px 20px;
+    background-color: #560000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #5600007a;
+}
+
+.contact{
+	padding:80px 0px;
+	background-color: #000000;
+}
+
+
+
+#projects {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#projects h2 {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+
+.project {
+  position: relative;
+  display: inline-block;
+  margin: 30px;
+  margin-top: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  width: 350px;
+  height: 350px;
+}
+
+.project img {
+  max-width: 500px;
+  height: 500px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.project-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 20px;
+  text-align: justify;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project:hover img {
+  transform: scale(1.2);
+}
+
+.project:hover .project-text {
+  opacity: 1;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.column {
+  flex: 1;
+  max-width: 400px;
+  text-align: justify;
+}
+
+.section {
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.image-container {
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  transition: filter 0.3s;
+}
+
+.description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.image-container:hover .image {
+  filter: brightness(70%);
+}
+
+.image-container:hover .description {
+  opacity: 1;
+}
+
+
+.about-section {
+  padding: 80px 40px;
+  color: #fff;
+  font-size: 40px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col {
+  flex: 0 0 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.about-img {
+  width: 100%;
+  border-radius: 15px;
+  height: auto;
+  transition: opacity 0.3s ease; /* Added opacity transition */
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  align-items: center;
+  text-align: justify;
+  text-shadow: 2px 2px 3px black;
+  transition: opacity 0.3s ease;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 15px;
+  display: none;
+  color: #ffffff; /* Set text color to black */
+}
+
+.overlay h1,
+.overlay p {
+  margin-bottom: 10px;
+}
+
+.about-img:hover {
+  opacity: 1; /* Lowered opacity on hover */
+}
+
+.about-img:hover + .overlay,
+.overlay:hover {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .about-col {
+    flex: 0 0 48%;
+    margin-bottom: 0;
+  }
+}
+
